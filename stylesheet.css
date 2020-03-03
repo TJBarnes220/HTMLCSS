@@ -1,0 +1,49 @@
+/* Handle basic element styling */
+/* -------------------------------------------------------------------------------------------- */
+body {
+    font: 1em/150% Helvetica, Arial, sans-serif; 
+    padding: 1em; 
+    margin: 0 auto; 
+    max-width: 33em;
+  }
+  
+  @media (min-width: 70em) {
+    /* Let's special case the global font size. On large screen or window,
+       we increase the font size for better readability */
+    body {
+      font-size: 130%;
+      font-style: italic;
+    }
+  }
+
+h1 {
+    color: red;
+  }
+
+  h1 + p {
+    font-size: 200%;
+  }
+  a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: green;
+  }
+
+  a:hover {
+    text-decoration: none;
+}
+   
+li {
+    list-style-type: none;
+  }
+
+  li.special {
+    color: orange;
+    font-weight: bold;
+  }
+
+  li em {
+    color: rebeccapurple;
+  }
