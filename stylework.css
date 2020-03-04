@@ -1,6 +1,14 @@
 h1 {
-    color: green;
-    font-size: 200%;
+    display: block;
+    font-size: 51px;
+    font-size: 2.83333rem;
+    font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+    line-height: 1;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 h1 + p {
@@ -8,12 +16,25 @@ h1 + p {
 }
 
 a:link {
-    color: yellow;
-}
-a:visited{
-    color: orange;
+    color: blue;
     text-decoration: none;
 }
+a:visited{
+    color: blueviolet;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button {
+    height: 200px;
+    width: 200px;
+}
+img {
+    height: 25%;
+    width: 25%;
+  }
 
 body {
     background-color: pink;
@@ -24,3 +45,47 @@ body {
       background-color: white;
     }
   }
+
+
+
+.titlebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 8px 16px;
+    border-bottom: solid 1px #dce3e5;
+    border-top: solid 1px #dce3e5;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 60px;
+}
+
+@media (min-width: 47.9385em){
+    .titlebar-container {
+        min-height: 106px;
+        padding: 12px 24px;
+    }
+}
+.titlebar-container .titlebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1352px;
+}
+
+.titlebar-container .title {
+    flex: 1 1;
+    font-size: 26px;
+    font-weight: 700;
+    hyphens: auto;
+}
+
+.title {
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
